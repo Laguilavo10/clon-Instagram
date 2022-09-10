@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /* outline: 1px solid tomato; */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+:root{
+    --border-grey : #dbdbdb;
+    --background-inputs : ##fafafa;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+.registro{
+    border: 1px solid var(--border-grey);
+    justify-self: center;
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3%; */
+}
+.instagram{
+    width: 170px;
+    display: flex;
+    align-self: center;
+    margin: 20px auto;
+
+}
+
+.registro-inputs{
+    display: flex;
+    margin: 6px;
+    padding: 8px;
+    width: 77%;
+    justify-self: center;
+    align-self: center;
+    margin: 6px auto;
+    color: #8e8e8e;
+    border-radius: 4px;
+    border: 1px solid var(--border-grey);
+
+}
+
+.button-iniciar-sesion{
+    background-color: #b2dffc;
+    width: 82%;
+    border: none;
+    display: flex;
+    margin: auto;
+    padding: 7px;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.button-iniciar-sesion span{
+    text-align:end;
+    margin: auto;
+    font-weight: 600;
+    color: white;
+}
+
+.o{
+    display: grid;
+    /* justify-content: center; */
+    width: 82%;
+    grid-template-columns: 1fr 20px 1fr;
+    justify-content: center;
+    margin: auto;
+    justify-items: center;
+}
+.sesion-facebook{
+    margin: 20px;
+    color: #385185;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 600;
+}
+.sesion-facebook img{
+    width: 20px;
+    margin: 3px;
+}
+
+.olvidaste-contraseña{
+    display: flex;
+    justify-content: center;
+    color: #385185;
+    font-size: 12px;
+    margin: 15px;
+
+}
