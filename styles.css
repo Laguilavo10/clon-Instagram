@@ -5,6 +5,7 @@
     /* outline: 1px solid tomato; */
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
     
 }
 
@@ -17,22 +18,23 @@
 body{
     display: flex;
     flex-direction: column;
-
+    padding: 7% 23%;
+    background-color: #fafafa;
 }
+
 .registro{
     border: 1px solid var(--border-grey);
     justify-self: center;
-    margin: auto;
-    width: 350px;
     display: flex;
     flex-direction: column;
-    /* padding: 3%; */
+    background-color: white;
+
 }
 .instagram{
     width: 170px;
     display: flex;
     align-self: center;
-    margin: 20px auto;
+    margin: 30px auto;
 
 }
 
@@ -45,9 +47,11 @@ body{
     align-self: center;
     margin: 6px auto;
     color: #8e8e8e;
+    background-color: #fafafa;
     border-radius: 4px;
     border: 1px solid var(--border-grey);
-
+    font-size: 11px;
+    font-weight: 0;
 }
 
 .button-iniciar-sesion{
@@ -70,15 +74,15 @@ body{
 
 .o{
     display: grid;
-    /* justify-content: center; */
     width: 82%;
     grid-template-columns: 1fr 20px 1fr;
     justify-content: center;
     margin: auto;
     justify-items: center;
+    color: #8e8e8e;
 }
 .sesion-facebook{
-    margin: 20px;
+    margin: 15px;
     color: #385185;
     display: flex;
     justify-content: center;
@@ -96,6 +100,94 @@ body{
     justify-content: center;
     color: #385185;
     font-size: 12px;
-    margin: 15px;
+    margin: 20px;
+}
 
+.no-tienes-cuenta{
+    margin-top: 10px;
+    border: 1px solid var(--border-grey);
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 6%;
+    text-align: center;
+}
+
+.no-tienes-cuenta span{
+    font-size: 13px;
+}
+
+.no-tienes-cuenta span a{
+    color: #0095f7;
+    font-weight: 600;
+}
+
+.descarga-app span{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.descarga-app div {
+    display: flex;
+    justify-content: center;
+}
+.descarga-app div img{
+    width: 130px;
+    margin: 5px;
+}
+
+.footer{
+    margin-top:60px;
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #8e8e8e;
+}
+.footer li {
+    margin: 5px;
+}
+
+.idioma-footer{
+    margin:20px;
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.idioma-footer li{
+    margin: 10px;
+    color: #8e8e8e;
+}
+
+
+@media (max-width: 450px) {
+    
+    body{
+        padding: 0;
+        background-color: white;
+    }
+    .registro{
+        border: none;
+    }
+    .registro-inputs{
+        width: 50%;
+        font-size: 12px;
+    }
+    .button-iniciar-sesion{
+        width: 54%;
+    }
+    .no-tienes-cuenta{
+        border: none;
+    }
+    .descarga-app div img{
+        width: 110px;
+        margin: 5px;
+    }
 }
