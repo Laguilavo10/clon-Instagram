@@ -22,6 +22,9 @@ body{
     background-color: #fafafa;
 }
 
+.iphones-desktop-view{
+    display: none;
+}
 .registro{
     border: 1px solid var(--border-grey);
     justify-self: center;
@@ -190,4 +193,52 @@ body{
         width: 110px;
         margin: 5px;
     }
+}
+
+@media (min-width:870px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "iphone register"
+        "footer footer";
+        padding: 5% 15%;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .iphones-desktop-view{
+        display: flex;
+        grid-area: iphone;
+        position: relative;
+    }
+    article{
+        max-width: 400px;
+    }
+    .registro{
+        grid-area: register;
+        width: 100%;
+    }
+
+    .iphone-atras{
+        position: absolute;
+        right: 140px;
+        height: 540px;
+        bottom: 10px;
+    }
+    .iphone-frente{
+        height: 540px;
+        z-index: 40;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    footer{
+        justify-self: center;
+        grid-area: footer;
+        width: 100%;
+        max-width: 1000px;
+    }
+
 }
